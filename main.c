@@ -1,20 +1,17 @@
 #include <stdio.h>
+#include "fib.h"
 
-// Fibonacci - for
+// Fibonacci - recursivo
 int main()
 {
-  long int number, aux_1 = 1, aux_2 = 1, aux_3;
+  unsigned int number;
 
   printf("Type a number: ");
   scanf("%d", &number);
 
-for (int i=2; i<number; i++){
-  aux_3 = aux_1;
-  aux_1 +=aux_2;
-  aux_2 = aux_3;
- }
-
- printf("%ldº Fibonacci number: %ld\n\n", number, aux_1);
+  printf("%dº Fibonacci number: %d\n\n", number, fib(number));
 
  return 0;
 }
+
+
